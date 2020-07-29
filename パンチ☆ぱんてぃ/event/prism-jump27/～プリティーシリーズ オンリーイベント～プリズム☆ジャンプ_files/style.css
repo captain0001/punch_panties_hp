@@ -1,0 +1,116 @@
+/*	注釈のあるところ以外は変更しないこと！！	*/
+
+
+
+BODY{ margin: 0px; padding: 0px; font-size: 100%; line-height:165%;
+
+	background-color: #87CEEB; /*	背景色	*/	
+
+	border-left: groove 16px #00008B;
+
+}
+
+
+
+/* * * * * 	ヘッダ部分	* * * * */
+
+.header { margin: 0px;
+
+}
+
+
+
+.head { margin: 0px; padding: 16px 0px 4px 8px; color: white; font: bold 110% ;
+
+	background-color: #0000CD;	/*	ヘッド背景色	*/
+
+}
+
+.head A{ text-decoration: none; color: white; }
+
+.head A:hover { text-decoration: none; color: white;
+
+	background-color: #0000CD;	/*	ヘッド背景色	*/
+
+}
+
+.head P { margin: 0px; }
+
+
+
+/* * * * * 	メニューバー	* * * * */
+
+.bar { border-bottom: solid 1px white; border-top: solid 1px white; text-align: center;
+
+	background-color: #6495ED; /*	メニュー背景色	*/
+
+}
+
+
+
+.link { width: 680px; margin: 0 auto; font-size: 83%;
+
+}
+
+.FCLR { clear: both; overflow: hidden;}
+
+.link DIV { float: left; padding: 1px 8px; border-right: dashed 1px white; color: gray;}
+
+.link DIV.top { border-left: dashed 1px white; }
+
+.link A { font-weight: bold; text-decoration: none; color: white; }
+
+.link A:hover { background-color: white; color: mediumturquoise; text-decoration: none;}
+
+
+
+.foot { padding: 4px 0 0 0; text-align: center; font-size: 80%;}
+
+
+
+.main { margin: 4px 16px 4px 24px; padding: 4px; 
+
+	background-color: #F0FFFF;	/*	メイン背景色	*/
+
+}
+
+.main H2 { margin: 2px; padding: 2px 1px 2px 8px; font: bold 115%; color: white;
+
+	background-color: #6495ED;		/*	見出し背景色	*/
+
+	border-left: solid 12px #0000CD;	/*	見出し頭色	*/
+
+	border-bottom: solid 2px #00008B;	/*	下線色	*/
+
+}
+
+.main.text { margin: 0 16px 0 16px;}
+
+
+
+
+
+A { text-decoration:underline; font-weight:bold; }
+
+A:hover { background-color: lightseagreen; color: white; }
+
+B { color: firebrick; }
+
+SMALL { font-size: 83%; line-height:120%; }
+
+TD	{ font-size: 100%; line-height:165% }
+
+BIG	{ font-size: 150%; line-height:120%;	font-weight:bold; color: firebrick;}
+
+
+
+.P10 { font-size: 75%; line-height:120%; }
+
+.P12 { font-size: 100%; line-height:160%; }
+
+.P20	{ font-size: 125%; line-height:150%;	font-weight:bold }
+
+.P24	{ font-size: 150%; line-height:120%;	font-weight:bold }
+
+.P32	{ font-size: 200%; line-height:110%;	font-weight:bold }
+
