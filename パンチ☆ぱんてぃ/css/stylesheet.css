@@ -1,0 +1,60 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: #ffe9f8;
+    color: #303030;
+  }
+  
+  .container {
+    width: 300px;
+    margin: auto;
+  }
+  
+  #app h1 {
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+  }
+  
+  #app li {
+    line-height: 1.5;
+  }
+  
+  #app input[type="text"] {
+    padding: 2px;
+  }
+
+  .command {
+    font-size: 12px;
+    cursor: pointer;
+    color: rgb(231, 68, 68);
+  }
+
+  #app ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  #app li > span.done {
+    text-decoration: line-through;
+    color: #bbb;
+  }
+
+  h1{
+    background-color: #303030;
+    color: #ddd;
+  }
+
+  h2{
+    background-color: #303030;
+    color: #ddd;
+  }
+
+  h3{
+    background-color: #303030;
+    color: #ddd;
+  }
+
+  .select_1{
+    background-color: #ffffe2;
+  }
