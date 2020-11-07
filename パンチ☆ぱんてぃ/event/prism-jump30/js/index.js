@@ -15,16 +15,21 @@ $(function() {
     }
     function match01() {
       console.log('押下');
-      const name = $('.download-001_name').val();
-      const pass = $('.download-001_pass').val();
-      console.log(name,pass);
-      $.getJSON("./json/pass.json", function(json) {
-        console.log(json); // this will show the info it in firebug console
-      });
+      const nameEnter = $('.download-001_name').val();
+      const passEnter = $('.download-001_pass').val();
+      console.log(nameEnter,passEnter);
       if (count < 1 ){
-        displayButton();
+        $.getJSON("./js/json/pass.json", function(json) {
+          json.forEach(value => {
+            // console.log(passValue.password);
+            if(value.password === passEnter && value.name === nameEnter){
+              console.log('一致しましたね');
+              displayButton();
+              count++ ;
+            }
+          });
+        });
       }
-      count++ ;
     }
     function events() {
       $download_01.on('click', match01);
