@@ -31,7 +31,8 @@ $(function() {
             }
           });
           if(successFlg === false){
-            $('.make01').append('<p class="error">idとpassのどちらかが間違えてます</p>');
+            $('.error').remove();
+            $('.make01').append('<p class="error">※idとpassのどちらかが間違えてます</p>');
           } else {
             $('.error').remove();
           }
