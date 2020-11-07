@@ -15,7 +15,12 @@ $(function() {
     }
     function match01() {
       console.log('押下');
-      const json = $.getJSON("./js/json/pass.json");
+      const name = $('.download-001_name').val();
+      const pass = $('.download-001_pass').val();
+      console.log(name,pass);
+      $.getJSON("./json/pass.json", function(json) {
+        console.log(json); // this will show the info it in firebug console
+      });
       if (count < 1 ){
         displayButton();
       }
