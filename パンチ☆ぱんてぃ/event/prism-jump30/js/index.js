@@ -6,6 +6,7 @@ $(function() {
     // });
     const $download_01 = $('.download_01');
     let count = 0;
+    let successFlg = false;
     function download01() {
       console.log('ダウンロードされました');
       location.href = './data/01/くありす本物語_01.jpg';
@@ -25,9 +26,15 @@ $(function() {
             if(value.password === passEnter && value.name === nameEnter){
               console.log('一致しましたね');
               displayButton();
+              successFlg = true;
               count++ ;
             }
           });
+          if(successFlg === false){
+            $('.make01').append('<p class="error">idとpassのどちらかが間違えてます</p>');
+          } else {
+            $('.error').remove();
+          }
         });
       }
     }

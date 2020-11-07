@@ -234,9 +234,6 @@ footer address .copyright {
 }
 
 .prism-jump30-page .dl-link-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-top: solid 1px #ff6699;
   padding-top: 10px;
   line-height: 1;
@@ -254,4 +251,18 @@ footer address .copyright {
 
 .prism-jump30-page .form .dl-link-item label .text {
   margin-left: 20px;
+}
+
+@media (min-width: 768px){
+  .prism-jump30-page .dl-link-item .entering-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .prism-jump30-page .dl-link-item .entering-form {
+    flex-direction: column;
+  }
 }
