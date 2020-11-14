@@ -7,12 +7,8 @@ $(function() {
     const $download_01 = $('.download_01');
     let count = 0;
     let successFlg = false;
-    function download01() {
-      console.log('ダウンロードされました');
-      location.href = './data/01/くありす本物語_01.jpg';
-    }
     function displayButton() {
-      $('.form').append('<a href="./data/01/くありす本物語_01.jpg" class="button download" download>ダウンロード</a>');
+      $('.form').append('<a href="https://1drv.ms/b/s!AnDGkcEU7JcNgp0_LhO2Hltcm2WFng?e=4WkeR1" class="button download" download>ダウンロード</a>');
     }
     function match01() {
       console.log('押下');
