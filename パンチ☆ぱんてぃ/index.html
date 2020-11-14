@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <meta lang="ja">
-    <title>パンチ☆ぱんてぃ -トップページ-</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
+<meta charset="utf-8">
+<meta lang="ja">
+<title>パンチ☆ぱんてぃ -トップページ-</title>
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/stylesheet.css">
 </head>
 <body>
-    <center>
-        <article>
-            <section>
-                <img src="./image/title.jpg" width="30%"><br>
-                <iframe src="iframe.html" width="70%" height="250px">最新・更新情報</iframe><br>
-                <div class="select_1">
-                    <h1>メンバー</h1>
-                    <a href="/profile/sanakichi.html">さなきち</a><br>
-                    <a href="/profile/yoroshi.html">よろし</a><br>
-                    <a href="/profile/kuarisu.html">くありす</a><br>
-                </div>
-                <div class="select_2">
-                    <h1>イベント参加情報</h1>
-                    <a href="/event/prism-jump27/prism-jump27.html">プリズムジャンプ27</a>
-                </div>
-            </section>
-            <hr>
-            <section>
-                <!-- ツイートボタン埋め込み -->
-                <a href="https://twitter.com/intent/tweet?button_hashtag=パンチぱんてぃ&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #パンチ☆ぱんてぃ</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </section>
-            <hr>
-        </article>
-    </center>
-
+  <header>
+    <div class="inner">
+      <div class="heading">
+        <h1 class="image">
+          <img src="./image/title.png" alt="パンチ☆パンティ">
+        </h1>
+        <p class="description">
+          ※プリズムジャンプ30のサークルカット
+        </p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article>
+      <section class="first-view">
+        <div class="container">
+          <iframe src="iframe.html" class="news">最新・更新情報</iframe><br>
+          <div class="member-group">
+            <h1 class="main-head">メンバー</h1>
+            <ul class="member-list">
+              <li class="member-item">
+                <a href="./profile/yoroshi.html" class="button white">よろし</a><br>
+              </li>
+              <li class="member-item">
+                <a href="./profile/kuarisu.html" class="button white">くありす</a><br>
+              </li>
+              <li class="member-item">
+                <a href="./profile/sanakichi.html" class="button white">さなきち</a><br>
+              </li>
+            </ul>
+          </div>
+          <div class="event-group">
+            <h1 class="main-head">イベント参加情報</h1>
+            <ul class="events-list">
+              <li class="event-item">2020年11月15日(日曜日)：<a href="./event/prism-jump30/prism-jump30.html">プリズムジャンプ30</a></li>
+              <li class="event-item">2019年11月10日(日曜日)：<a href="./event/prism-jump27/prism-jump27.html">プリズムジャンプ27</a></li>
+            </ul>
+          </div>
+          <div class="share-group">
+            <p class="twitter">
+              <a href="https://twitter.com/intent/tweet?button_hashtag=パンチぱんてぃ&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #パンチ☆ぱんてぃ</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <address>
+      <p class="copyright">
+        <span>&copy;</span> 2020 PunchPanties . All Rights Reserved.
+      </p>
+    </address>
+  </footer>
 </body>
