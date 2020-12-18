@@ -1,9 +1,6 @@
 
 $(function() {
   function downloadMatch() {
-    // $.getJSON("./js/json/pass.json", function(json) {
-    //   console.log(json); // this will show the info it in firebug console
-    // });
     const $download_01 = $('.download_01');
     let count = 0;
     let successFlg = false;
@@ -16,9 +13,8 @@ $(function() {
       const passEnter = $('.download-001_pass').val();
       console.log(nameEnter,passEnter);
       if (count < 1 ){
-        $.getJSON("./js/json/pass.json", function(json) {
+        $.getJSON("https://script.google.com/macros/s/AKfycby1FT-gVg42g99jVW65C65kb7fRWq4FiLKatYob6U2YAfB3fXWh/exec", function(json) {
           json.forEach(value => {
-            // console.log(passValue.password);
             if(value.password === passEnter && value.name === nameEnter){
               console.log('一致しましたね');
               displayButton();
