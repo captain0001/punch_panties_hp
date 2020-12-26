@@ -34,11 +34,27 @@ a {
 a:hover {
   opacity: 0.8;
 }
+
+h1 {
+  background-color: #303030;
+  color: #ddd;
+}
+
+h2 {
+  background-color: #303030;
+  color: #ddd;
+}
+
+h3 {
+  background-color: #303030;
+  color: #ddd;
+}
+
+
 /* global */
 
 .container {
   margin: auto;
-  /* max-width: 980px; */
   width: calc(100% - 60px);
   height: 100vh;
 }
@@ -100,29 +116,14 @@ a:hover {
   color: #bbb;
 }
 
-h1{
-  background-color: #303030;
-  color: #ddd;
-}
-
-h2{
-  background-color: #303030;
-  color: #ddd;
-}
-
-h3{
-  background-color: #303030;
-  color: #ddd;
-}
-
 /* local */
-header {
+.index-page header {
   margin-top: 10px;
   border-top: solid 2px #ff6699;
   padding-top: 10px;
 }
 
-header .inner {
+.index-page header .inner {
   display: flex;
   justify-content: center;
   margin: auto;
@@ -130,11 +131,7 @@ header .inner {
   width: calc(100% - 60px);
 }
 
-header .inner .image {
-  /* position: sticky; */
-}
-
-header .inner .description {
+.index-page header .inner .description {
   position: relative;
   left: calc(100% - 325px);
   bottom: 30px;
@@ -148,66 +145,62 @@ header .inner .description {
   text-align: center;
 }
 
-main .first-view {
-  /* */
-}
-
-main .first-view .container {
+.index-page main .first-view .container {
   max-width: 980px;
   width: calc(100% - 60px);
 }
 
-main .first-view .news {
+.index-page main .first-view .news {
   width: 100%;
 }
 
-main .first-view .member-group {
+.index-page main .first-view .member-group {
   background-color: #fffbe3;
 }
 
-main .first-view .member-group .member-list {
+.index-page main .first-view .member-group .member-list {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px 0px;
 }
 
-main .first-view .member-group .member-item {
+.index-page main .first-view .member-group .member-item {
   display: flex;
 }
 
-main .first-view .member-group .member-item:nth-of-type(n+2) {
+.index-page main .first-view .member-group .member-item:nth-of-type(n+2) {
   margin-left: 30px;
 }
 
-main .first-view .member-group .button {
+.index-page main .first-view .member-group .button {
   width: 160px;
   height: 30px;
 }
 
-main .first-view .event-group {
+.index-page main .first-view .event-group {
   background-color: #fffbe3;
 }
 
-main .first-view .events-list {
+.index-page main .first-view .events-list {
   list-style: circle;
   margin: auto;
   padding: 15px;
   width: calc(100% - 160px);
 }
 
-main .share-group {
+.index-page main .share-group {
   border: solid 5px #ff6699;
   padding: 5px;
   background-color: #ffb6ce;
 }
 
-footer {
+.index-page footer {
   margin-top: 50px;
   background-color: #ff6699;
 }
 
-footer address {
+.index-page footer address {
   margin: auto;
   padding: 10px;
   max-width: 980px;
@@ -215,7 +208,7 @@ footer address {
   color: #ffffff;
 }
 
-footer address .copyright {
+.index-page footer address .copyright {
   color: inherit;
 }
 
