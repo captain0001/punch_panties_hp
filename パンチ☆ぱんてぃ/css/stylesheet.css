@@ -36,28 +36,34 @@ a:hover {
 }
 
 h1 {
+  padding: 10px;
+  line-height: 1;
   background-color: #303030;
   color: #ddd;
 }
 
 h2 {
+  padding: 10px;
+  line-height: 1;
   background-color: #303030;
   color: #ddd;
 }
 
 h3 {
+  padding: 10px;
+  line-height: 1;
   background-color: #303030;
   color: #ddd;
 }
 
+article {
+  margin: auto;
+  padding: 30px;
+  border: solid 1px #30303015;
+}
+
 
 /* global */
-
-.container {
-  margin: auto;
-  width: calc(100% - 60px);
-  height: 100vh;
-}
 
 .button {
   display: flex;
@@ -120,15 +126,13 @@ h3 {
 .index-page header {
   margin-top: 10px;
   border-top: solid 2px #ff6699;
-  padding-top: 10px;
+  padding: 10px 30px;
 }
 
 .index-page header .inner {
   display: flex;
   justify-content: center;
   margin: auto;
-  max-width: 980px;
-  width: calc(100% - 60px);
 }
 
 .index-page header .inner .description {
@@ -143,11 +147,6 @@ h3 {
   color: #ffffff;
   background-color: #303030;
   text-align: center;
-}
-
-.index-page main .first-view .container {
-  max-width: 980px;
-  width: calc(100% - 60px);
 }
 
 .index-page main .first-view .news {
@@ -196,7 +195,6 @@ h3 {
 }
 
 .index-page footer {
-  margin-top: 50px;
   background-color: #ff6699;
 }
 
@@ -215,7 +213,6 @@ h3 {
 /* news-page */
 .news-page .container {
   width: 100%;
-  height: 100vh;
 }
 
 .news-page .news-list {
@@ -223,36 +220,90 @@ h3 {
   background-color: #fffbe3;
 }
 
-.prism-jump30-page .form {
+.event-page .container {
+  border: solid 1px #303030;
+}
+
+.event-page .date {
+  padding: 10px 30px;
   background-color: #fffbe3;
 }
 
-.prism-jump30-page .dl-link-item {
-  border-top: solid 1px #ff6699;
-  padding-top: 10px;
+.event-page .form {
+  background-color: #fffbe3;
+}
+
+.event-page .dl-link-item {
+  padding: 10px 30px 0px;
   line-height: 1;
 }
 
-.prism-jump30-page .dl-link-item:nth-of-type(n+2) {
+.event-page .dl-link-item:nth-of-type(n+2) {
   margin-top: 10px;
+  border-top: solid 1px #ff6699;
 }
 
-.prism-jump30-page .form .dl-link-item label {
+.event-page .form .dl-link-item label {
   display: flex;
   line-height: 1;
   height: 20px;
 }
 
-.prism-jump30-page .form .dl-link-item label .text {
+.event-page .form .dl-link-item label .text {
   margin-left: 20px;
 }
 
-.prism-jump30-page .form .dl-link-item .error {
+.event-page .form .dl-link-item .error {
   color: #ff5e5e;
 }
 
+.event-page article > .button {
+  margin-top: 30px;
+}
+
+.prism-jump31-page .container {
+  border: solid 1px #303030;
+}
+
+.prism-jump31-page .date {
+  padding: 10px 30px;
+  background-color: #fffbe3;
+}
+
+.prism-jump31-page .form {
+  background-color: #fffbe3;
+}
+
+.prism-jump31-page .dl-link-item {
+  padding: 10px 30px 0px;
+  line-height: 1;
+}
+
+.prism-jump31-page .dl-link-item:nth-of-type(n+2) {
+  margin-top: 10px;
+  border-top: solid 1px #ff6699;
+}
+
+.prism-jump31-page .form .dl-link-item label {
+  display: flex;
+  line-height: 1;
+  height: 20px;
+}
+
+.prism-jump31-page .form .dl-link-item label .text {
+  margin-left: 20px;
+}
+
+.prism-jump31-page .form .dl-link-item .error {
+  color: #ff5e5e;
+}
+
+.prism-jump31-page article > .button {
+  margin-top: 30px;
+}
+
 @media (min-width: 1025px){
-  .prism-jump30-page .dl-link-item .entering-form {
+  .event-page .dl-link-item .entering-form {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -260,42 +311,39 @@ h3 {
 }
 
 @media (max-width: 1024px) {
-  /* .container {
-    height: 100vh;
-  } */
-  .prism-jump30-page h1 {
+  .event-page h1 {
     font-size: 60px;
   }
-  .prism-jump30-page .date {
+  .event-page .date {
     font-size: 60px;
   }
-  .prism-jump30-page h2 {
+  .event-page h2 {
     font-size: 42px;
   }
-  .prism-jump30-page .main-head {
+  .event-page .main-head {
     font-size: 42px;
   }
   
-  .prism-jump30-page .title {
+  .event-page .title {
     font-size: 42px;
   }
-  .prism-jump30-page .dl-link-item .entering-form {
+  .event-page .dl-link-item .entering-form {
     margin: auto;
     flex-direction: column;
     width: calc(100% - 30px);
   }
-  .prism-jump30-page .form .dl-link-item label {
+  .event-page .form .dl-link-item label {
     justify-content: center;
     margin: 60px 0;
     height: 60px;
     width: 100%;
   }
-  .prism-jump30-page .form .dl-link-item label .text {
+  .event-page .form .dl-link-item label .text {
     width: 100%;
     height: 60px;
     font-size: 54px;
   }
-  .prism-jump30-page .form .dl-link-item .error {
+  .event-page .form .dl-link-item .error {
     margin: 20px;
     font-size: 36px;
   }
