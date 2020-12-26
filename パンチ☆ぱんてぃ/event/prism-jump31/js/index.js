@@ -22,7 +22,7 @@ $(function() {
           });
           if(successFlg === false){
             $('.error').remove();
-            $('.make01').append('<p class="error">※idとpassのどちらかが間違えてます</p>');
+            $('.make01').append('<p class="error">※QRコードを読み込んだ状態で「認証」ボタンを押下してください。認証するのに少々時間がかかる恐れがあります。</p>');
           } else {
             $('.error').remove();
           }
