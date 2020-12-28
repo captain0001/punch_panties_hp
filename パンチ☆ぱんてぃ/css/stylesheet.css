@@ -34,14 +34,36 @@ a {
 a:hover {
   opacity: 0.8;
 }
-/* global */
 
-.container {
-  margin: auto;
-  /* max-width: 980px; */
-  width: calc(100% - 60px);
-  height: 100vh;
+h1 {
+  padding: 10px;
+  line-height: 1;
+  background-color: #303030;
+  color: #ddd;
 }
+
+h2 {
+  padding: 10px;
+  line-height: 1;
+  background-color: #303030;
+  color: #ddd;
+}
+
+h3 {
+  padding: 10px;
+  line-height: 1;
+  background-color: #303030;
+  color: #ddd;
+}
+
+article {
+  margin: auto;
+  padding: 30px;
+  border: solid 1px #30303015;
+}
+
+
+/* global */
 
 .button {
   display: flex;
@@ -52,8 +74,13 @@ a:hover {
   font-weight: bold;
 }
 
-.button.white{
+.button.white {
   color: #ffffff;
+}
+
+.buttonWrap {
+  border-top: solid 1px #ff6699;
+  padding: 10px;
 }
 
 .button.download {
@@ -100,41 +127,20 @@ a:hover {
   color: #bbb;
 }
 
-h1{
-  background-color: #303030;
-  color: #ddd;
-}
-
-h2{
-  background-color: #303030;
-  color: #ddd;
-}
-
-h3{
-  background-color: #303030;
-  color: #ddd;
-}
-
 /* local */
-header {
+.index-page header {
   margin-top: 10px;
   border-top: solid 2px #ff6699;
-  padding-top: 10px;
+  padding: 10px 30px;
 }
 
-header .inner {
+.index-page header .inner {
   display: flex;
   justify-content: center;
   margin: auto;
-  max-width: 980px;
-  width: calc(100% - 60px);
 }
 
-header .inner .image {
-  /* position: sticky; */
-}
-
-header .inner .description {
+.index-page header .inner .description {
   position: relative;
   left: calc(100% - 325px);
   bottom: 30px;
@@ -148,66 +154,56 @@ header .inner .description {
   text-align: center;
 }
 
-main .first-view {
-  /* */
-}
-
-main .first-view .container {
-  max-width: 980px;
-  width: calc(100% - 60px);
-}
-
-main .first-view .news {
+.index-page main .first-view .news {
   width: 100%;
 }
 
-main .first-view .member-group {
+.index-page main .first-view .member-group {
   background-color: #fffbe3;
 }
 
-main .first-view .member-group .member-list {
+.index-page main .first-view .member-group .member-list {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px 0px;
 }
 
-main .first-view .member-group .member-item {
+.index-page main .first-view .member-group .member-item {
   display: flex;
 }
 
-main .first-view .member-group .member-item:nth-of-type(n+2) {
+.index-page main .first-view .member-group .member-item:nth-of-type(n+2) {
   margin-left: 30px;
 }
 
-main .first-view .member-group .button {
+.index-page main .first-view .member-group .button {
   width: 160px;
   height: 30px;
 }
 
-main .first-view .event-group {
+.index-page main .first-view .event-group {
   background-color: #fffbe3;
 }
 
-main .first-view .events-list {
+.index-page main .first-view .events-list {
   list-style: circle;
   margin: auto;
   padding: 15px;
   width: calc(100% - 160px);
 }
 
-main .share-group {
+.index-page main .share-group {
   border: solid 5px #ff6699;
   padding: 5px;
   background-color: #ffb6ce;
 }
 
-footer {
-  margin-top: 50px;
+.index-page footer {
   background-color: #ff6699;
 }
 
-footer address {
+.index-page footer address {
   margin: auto;
   padding: 10px;
   max-width: 980px;
@@ -215,14 +211,13 @@ footer address {
   color: #ffffff;
 }
 
-footer address .copyright {
+.index-page footer address .copyright {
   color: inherit;
 }
 
 /* news-page */
 .news-page .container {
   width: 100%;
-  height: 100vh;
 }
 
 .news-page .news-list {
@@ -230,36 +225,89 @@ footer address .copyright {
   background-color: #fffbe3;
 }
 
-.prism-jump30-page .form {
+.event-page .container {
+  border: solid 1px #303030;
+}
+
+.event-page .date {
+  padding: 10px 30px;
   background-color: #fffbe3;
 }
 
-.prism-jump30-page .dl-link-item {
-  border-top: solid 1px #ff6699;
-  padding-top: 10px;
+.event-page .form {
+  background-color: #fffbe3;
+}
+
+.event-page .dl-link-item {
+  padding: 10px 30px;
   line-height: 1;
 }
 
-.prism-jump30-page .dl-link-item:nth-of-type(n+2) {
-  margin-top: 10px;
+.event-page .dl-link-item:nth-of-type(n+2) {
+  border-top: solid 1px #ff6699;
 }
 
-.prism-jump30-page .form .dl-link-item label {
+.event-page .form .dl-link-item label {
   display: flex;
   line-height: 1;
   height: 20px;
 }
 
-.prism-jump30-page .form .dl-link-item label .text {
+.event-page .form .dl-link-item label .text {
   margin-left: 20px;
 }
 
-.prism-jump30-page .form .dl-link-item .error {
+.event-page .form .dl-link-item .error {
   color: #ff5e5e;
 }
 
+.event-page article > .button {
+  margin-top: 30px;
+}
+
+.prism-jump31-page .container {
+  border: solid 1px #303030;
+}
+
+.prism-jump31-page .date {
+  padding: 10px 30px;
+  background-color: #fffbe3;
+}
+
+.prism-jump31-page .form {
+  background-color: #fffbe3;
+}
+
+.prism-jump31-page .dl-link-item {
+  padding: 10px 30px 0px;
+  line-height: 1;
+}
+
+.prism-jump31-page .dl-link-item:nth-of-type(n+2) {
+  margin-top: 10px;
+  border-top: solid 1px #ff6699;
+}
+
+.prism-jump31-page .form .dl-link-item label {
+  display: flex;
+  line-height: 1;
+  height: 20px;
+}
+
+.prism-jump31-page .form .dl-link-item label .text {
+  margin-left: 20px;
+}
+
+.prism-jump31-page .form .dl-link-item .error {
+  color: #ff5e5e;
+}
+
+.prism-jump31-page article > .button {
+  margin-top: 30px;
+}
+
 @media (min-width: 1025px){
-  .prism-jump30-page .dl-link-item .entering-form {
+  .event-page .dl-link-item .entering-form {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -267,42 +315,39 @@ footer address .copyright {
 }
 
 @media (max-width: 1024px) {
-  /* .container {
-    height: 100vh;
-  } */
-  .prism-jump30-page h1 {
+  .event-page h1 {
     font-size: 60px;
   }
-  .prism-jump30-page .date {
+  .event-page .date {
     font-size: 60px;
   }
-  .prism-jump30-page h2 {
+  .event-page h2 {
     font-size: 42px;
   }
-  .prism-jump30-page .main-head {
+  .event-page .main-head {
     font-size: 42px;
   }
   
-  .prism-jump30-page .title {
+  .event-page .title {
     font-size: 42px;
   }
-  .prism-jump30-page .dl-link-item .entering-form {
+  .event-page .dl-link-item .entering-form {
     margin: auto;
     flex-direction: column;
     width: calc(100% - 30px);
   }
-  .prism-jump30-page .form .dl-link-item label {
+  .event-page .form .dl-link-item label {
     justify-content: center;
     margin: 60px 0;
     height: 60px;
     width: 100%;
   }
-  .prism-jump30-page .form .dl-link-item label .text {
+  .event-page .form .dl-link-item label .text {
     width: 100%;
     height: 60px;
     font-size: 54px;
   }
-  .prism-jump30-page .form .dl-link-item .error {
+  .event-page .form .dl-link-item .error {
     margin: 20px;
     font-size: 36px;
   }
